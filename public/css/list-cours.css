@@ -1,0 +1,158 @@
+body {
+    margin: 0;
+}
+
+#container {
+    padding-top: 2%;
+    display: grid;
+    grid-template-rows: max-content 30%;
+    grid-row-gap: 3%;
+}
+
+.slide {
+    display: grid;
+    grid-template-columns: 40% 50%;
+    grid-column-gap: 2%;
+    justify-content: center;
+    height: 600px;
+    background-position: center;
+    background-size: cover;
+}
+
+#plus-infos {
+    align-items: center;
+    padding-left: 28.5%;
+    color: #150035;
+    background-color: #fca965;
+    margin-bottom: 0.5%;
+    /* display: grid; */
+    /* justify-content: center; */
+    /* grid-template-columns: 30% 10%;
+    grid-column-gap: 30%; */
+}
+
+#plus-infos > a {
+    margin: 0;
+    padding: 5px;
+    text-align: center;
+    width: max-content;
+}
+
+#carousel,
+#section-2 {
+    height: 400px;
+}
+
+#carousel > div.active-slide {
+    display: grid;
+}
+
+.section-item {
+    justify-content: flex-end;
+    background-size: cover;
+    text-align: center;
+}
+
+.section-title > a {
+    color: white;
+    font-size: 20px;
+}
+
+.section-item > a:hover {
+    color: white;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.section-title {
+    margin-top: 55%;
+}
+
+.arrow {
+    margin: auto;
+}
+
+#courses {
+    width: 87%;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 5%;
+}
+
+.lesson-details > a {
+    color: black;
+}
+
+.lesson-details > a:hover {
+    cursor: pointer;
+    color: #fca965;
+}
+/*
+.course-item{
+display: grid;
+grid-template-columns: 10% 70%;
+}
+
+.course-item >img{
+height: 80px;
+width: 80px;
+}
+
+.course-details{
+display: grid;
+grid-template-rows: auto;
+grid-row-gap: 5%;
+} */
+
+#pagination {
+    display: inline-block;
+    justify-content: center;
+    margin-left: 40%;
+    margin-bottom: 2%;
+}
+
+#pagination > span {
+    background-color: #150035;
+    color: white;
+    padding: 5px;
+}
+
+.btn-consulter {
+    width: 150px;
+    text-align: center;
+    color: #fff;
+    border-radius: 5px;
+    /* border: 1px solid #150035; */
+    background-color: #150035;
+    padding: 7px;
+}
+
+.btn-consulter:hover{
+    transition-duration: 0.2s;
+    box-shadow: 7px 7px 1px 1px #fca965; 
+    cursor: pointer;
+    background-color: #150035;
+    color: #fff;
+}
+
+@media screen and (max-width: 640px) {
+    #courses {
+        margin-top: 5%;
+    }
+    .slide {
+        height: 100px;
+        width: 100%;
+    }
+    .lesson-item-img {
+        display: none;
+    }
+
+    .section-item > a {
+        font-size: 15px;
+    }
+
+    #carousel,
+    #section-2 {
+        height: 200px;
+    }
+}

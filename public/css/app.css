@@ -1,0 +1,150 @@
+@font-face {
+  font-family: fontLight;
+  src: url("/fonts/nexa_light.otf");
+}
+
+@font-face {
+  font-family: fontBold;
+  src: url("/fonts/nexa_bold.otf");
+}
+
+body{
+  margin:0;
+  font-family:fontLight;
+}
+
+.bold{
+  font-family:fontBold;
+
+}
+
+.btn{
+  padding:10px;
+  border-radius: 2px;
+}
+
+
+.btn-orange{
+  background-color: #fca965;
+}
+
+.btn-blue{
+  background-color: #150035;
+}
+
+.btn-blue:hover{
+  color:#150035;
+  background-color: white;
+}
+.text-white{
+  color:white;
+}
+
+
+.text-blue{
+  color:#150035;
+}
+
+.text-gray{
+  color:gray ;
+}
+
+#menu{
+  padding:15px 10px 10px 50px;
+  display: grid;
+  grid-template-columns: 40% 20%;
+  grid-column-gap: 35%;
+  align-items: center;
+  box-shadow: 1px 2px 2px gray;
+}
+.active{
+  color: #150035;
+  border-bottom: 1px solid #fca965;
+  width:max-content;
+  margin:0;
+  padding:0;
+}
+.left-menu{
+  display: grid;
+  grid-template-columns: 40% 15% 15% 15%;
+}
+
+.right-menu{
+  margin:0;
+  display: grid;
+  grid-template-columns: max-content max-content;
+  grid-column-gap: 5%;
+}
+
+#btn-login{
+  border:1px solid #150035;
+  border-radius: 3px;
+  padding:10px;
+  color:#150035;
+}
+
+#btn-signup{
+  border:1px solid #150035;
+  border-radius: 3px;
+  padding:10px;
+}
+
+.left-menu>a{
+  text-decoration: none;
+}
+
+.left-menu>a:hover{
+  color: #150035;
+}
+#footer{
+  margin-top:3%;
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20%;
+  grid-column-gap: 5%;
+  justify-content: center;
+}
+
+.footer-item{
+  display: grid;
+  grid-template-rows: auto auto;
+  /* grid-row-gap: 10px; */
+  color:gray;
+}
+
+.footer-item >div{
+  display: grid;
+  grid-template-rows: auto;
+  grid-row-gap: 8px;
+}
+
+@media screen and (max-width:840px) {
+  #menu{
+    grid-column-gap: 20%;
+  }
+  .left-menu{
+    /* margin-left:10%; */
+    grid-column-gap: 5%;
+  }
+}
+
+@media screen and (max-width:640px){
+  #menu {
+    grid-template-columns: 100%;
+    justify-content: center;
+  }
+  .left-menu {
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width:720px) {
+  /* #menu-item1, #menu-item2{
+  display: none;
+  } */
+  .left-menu{
+    grid-column-gap: 5%;
+  }
+  /* .left-menu >a:first-child{
+  font-size: 24px;
+  } */
+}

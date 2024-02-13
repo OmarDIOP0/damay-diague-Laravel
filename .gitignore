@@ -1,0 +1,38 @@
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 3e4bf8b (interface de connection)
+=======
+/.phpunit.cache
+>>>>>>> 8431243 (interface de connexion changement)
+=======
+/.phpunit.cache
+>>>>>>> ffcefe8 (interface de connection)
+<<<<<<< HEAD
+=======
+=======
+/.phpunit.cache
+>>>>>>> 8431243 (interface de connexion changement)
+>>>>>>> 86c9896 (interface de connexion changement)
+=======
+>>>>>>> 3e4bf8b (interface de connection)
+/node_modules
+/public/build
+/public/hot
+/public/storage
+/storage/*.key
+/vendor
+.env
+.env.backup
+.env.production
+.phpunit.result.cache
+Homestead.json
+Homestead.yaml
+auth.json
+npm-debug.log
+yarn-error.log
+/.fleet
+/.idea
+/.vscode
